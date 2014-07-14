@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/temprature_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/temprature_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView android:id="@+id/day_header"
+                android:text="@string/day"/>
+            <TextView android:id="@+id/min_header"
+                android:text="@string/min"/>
+            <TextView android:id="@+id/max_header"
+                android:text="@string/max"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/temprature_view_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView android:id="@+id/day"
+                android:text="@string/day"/>
+            <TextView android:id="@+id/min"
+                android:text="@string/min"/>
+            <TextView android:id="@+id/max"
+                android:text="@string/max"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
